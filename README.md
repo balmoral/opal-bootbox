@@ -2,7 +2,7 @@
 
 The goal of this project is to wrap the Bootbox Javascript library with Opal, providing a simple Ruby interface to Bootbox functionality.
 
-Bootbox.js is a small JavaScript library which implements dialog (alert, prompt, confirm) boxes using Bootstrap modals.
+Bootbox.js is a small open source (MIT) JavaScript library which implements dialog (alert, prompt, confirm) boxes using Bootstrap modals.
 
 To find out more about Bootbox, go to http://bootboxjs.com.
 
@@ -47,7 +47,7 @@ require 'opal-bootbox'
 >> http://getbootstrap.com/getting-started/#download
 > and put the files in `app/` or whichever directory you are compiling assets from.
 
-### Usage
+### Examples
 
 ```
 $bootbox.alert('Hello world!') do
