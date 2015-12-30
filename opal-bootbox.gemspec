@@ -3,7 +3,7 @@ require File.expand_path('../lib/opal/bootbox/version', __FILE__)
 
 Gem::Specification.new do |spec|
   spec.name           = 'opal-bootbox'
-  spec.version        = Opal::Webix::VERSION
+  spec.version        = Opal::Bootbox::VERSION
   spec.authors        = [ 'Colin Gunn' ]
   spec.email          = [ 'colgunn@icloud.com' ]
   spec.homepage       = 'http://github.com/balmoral/opal-bootbox'
