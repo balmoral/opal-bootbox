@@ -30,7 +30,6 @@ end
 $bootbox = Opal::Bootbox
 
 if RUBY_ENGINE == 'opal'
-  require 'opal/bootbox/setup'
 else
   require 'opal'
   require 'opal/bootbox/version'
