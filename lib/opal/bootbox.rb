@@ -45,6 +45,7 @@ module Opal
         bootbox_call(__method__, *args) do |value|
           value
         end
+      end
     end
 
   end
