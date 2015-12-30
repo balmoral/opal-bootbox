@@ -3,7 +3,7 @@ module Opal
     module_function
 
     def bootbox_call(method, *args, &block)
-      Native.call(`bootbox`, method, *args, &block)
+      ::Native.call(`bootbox`, method, *args, &block)
     end
 
     # Creates an alert window.
