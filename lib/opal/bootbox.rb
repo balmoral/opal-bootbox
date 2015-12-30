@@ -1,4 +1,3 @@
-if RUBY_ENGINE == 'opal'
 require 'native'
 
 module Opal
@@ -32,7 +31,6 @@ module Opal
 end
 
 $bootbox = Opal::Bootbox
-end
 
 unless RUBY_ENGINE == 'opal'
   require 'opal'
