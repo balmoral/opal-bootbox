@@ -1,3 +1,6 @@
+if RUBY_ENGINE == 'opal'
+require 'native'
+
 module Opal
   module Bootbox
     module_function
@@ -27,10 +30,11 @@ module Opal
 
   end
 end
-$bootbox = Opal::Bootbox
 
-if RUBY_ENGINE == 'opal'
-else
+$bootbox = Opal::Bootbox
+end
+
+unless RUBY_ENGINE == 'opal'
   require 'opal'
   require 'opal/bootbox/version'
   Opal.append_path File.expand_path('../..', __FILE__).untaint
