@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.authors        = [ 'Colin Gunn' ]
   spec.email          = [ 'colgunn@icloud.com' ]
   spec.homepage       = 'http://github.com/balmoral/opal-bootbox'
-  spec.summary        = 'Opal Ruby wrapper for Webix Javascript library.'
+  spec.summary        = 'Opal Ruby wrapper for Bootbox Javascript library.'
   spec.license        = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
