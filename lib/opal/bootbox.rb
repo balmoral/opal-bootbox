@@ -7,22 +7,36 @@ module Opal
     end
 
     # Creates an alert window.
-    # The given block is optional.
     # No result is passed to the given block.
+    # The given block is optional.
     def alert(*args, &block)
       bootbox_call(__method__, *args, &block)
     end
 
     # Creates a confirm window.
     # The result passed to given block is true or false.
+    # If no block is given then true or false or nil is returned.
     def confirm(*args, &block)
-      bootbox_call(__method__, *args, &block)
+      if block
+        bootbox_call(__method__, *args, &block)
+      else
+        bootbox_call(__method__, *args) do |confirmed|
+          confirmed
+        end
+      end
     end
 
     # Creates a prompt window.
     # The result passed to given block is a String or nil.
+    # If no block is given then entered value or nil is returned.
     def prompt(*args, &block)
-      bootbox_call(__method__, *args, &block)
+      if block
+        bootbox_call(__method__, *args, &block)
+      else
+        bootbox_call(__method__, *args) do |value|
+          value
+        end
+      end
     end
 
   end
