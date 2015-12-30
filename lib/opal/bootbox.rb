@@ -1,3 +1,5 @@
+require 'native'
+
 module Opal
   module Bootbox
     module_function
