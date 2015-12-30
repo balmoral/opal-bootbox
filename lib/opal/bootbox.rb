@@ -1,3 +1,4 @@
+require 'bson'
 require 'native'
 
 module Opal
