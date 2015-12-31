@@ -179,9 +179,9 @@ $bootbox.dialog(
 
 ## To do
 
-* Implement Bootbox custom dialog options. 
 * Documentation
 * Testing
+* snake case keywords ?
 
 ## Getting involved
 
