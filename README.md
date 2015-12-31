@@ -177,6 +177,13 @@ $bootbox.dialog(
 )
 ```
 
+
+`$bootbox` is a global variable. `Opal::Bootbox` may be substituted. 
+
+Strings (text) provided as arguments to bootbox methods may be HTML format.
+
+All methods are executed asynchronously, hence the use of callback blocks and procs. 
+
 ## To do
 
 * Documentation
