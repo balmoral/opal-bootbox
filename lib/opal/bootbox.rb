@@ -43,6 +43,14 @@ module Opal
       bootbox_call(__method__, *args, &block)
     end
 
+    # Creates a custom dialog window.
+    # Method executes asynchronously.
+    # The result passed to given block is a String or nil.
+    # see http://bootboxjs.com/examples.html
+    def dialog(*args, &block)
+      bootbox_call(__method__, *args, &block)
+    end
+
   end
 end
 
