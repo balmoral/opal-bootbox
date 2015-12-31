@@ -42,10 +42,13 @@ require 'opal'
 require 'opal-bootbox'
 ```
 
-> You need to bring your own `bootbox.js` or `bootbox.min.js` and bootstrap files.
->> http://bootboxjs.com/download/
->> http://getbootstrap.com/getting-started/#download
-> and put the files in `app/` or whichever directory you are compiling assets from.
+You need to bring your own `bootbox.js` or `bootbox.min.js` and bootstrap files.
+
+http://bootboxjs.com/download/
+http://getbootstrap.com/getting-started/#download
+
+and put the files in `app/` or whichever directory you are compiling assets from.
+
 The Opal/Ruby interface is largely consistent with the Javascript interface.
  
 See http://bootboxjs.com/documentation.html for Javascript library documentation.
