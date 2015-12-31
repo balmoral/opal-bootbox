@@ -42,10 +42,10 @@ require 'opal'
 require 'opal-bootbox'
 ```
 
-You need to bring your own `bootbox.js` or `bootbox.min.js` and bootstrap files.
+You need to bring your own `bootbox.js` or `bootbox.min.js` and bootstrap files
 
-http://bootboxjs.com/download/
-http://getbootstrap.com/getting-started/#download
+* http://bootboxjs.com/download/
+* http://getbootstrap.com/getting-started/#download
 
 and put the files in `app/` or whichever directory you are compiling assets from.
 
