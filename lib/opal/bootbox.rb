@@ -7,13 +7,15 @@ if RUBY_ENGINE == 'opal'
 
 require 'native'
 
+# see http://bootboxjs.com/documentation.html
+
 module Opal
   module Bootbox
     module_function
 
     def bootbox_call(method, *args, &block)
       arg = args.first
-      if arg.is_a?(Hash)
+      if arg.is_a?(Hash) && arg[:callback].nil?
         arg[:callback] = block
         Native.call(`bootbox`, method, arg.to_n)
       else
