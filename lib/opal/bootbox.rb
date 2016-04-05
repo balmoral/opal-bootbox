@@ -35,6 +35,7 @@ module Opal
     # Method executes asynchronously.
     # The result passed to given block is true or false.
     def confirm(*args, &block)
+      `console.log(#{"#{__FILE__}[#{__LINE__}]:#{self.class.name}##{__method__}"})`
       bootbox_call(__method__, *args, &block)
     end
 
